@@ -1,63 +1,899 @@
-<!DOCTYPE html> <html lang="id"><head>
-<title>CODE OF CONDUCT</title>
-<base href="/test-repo/">
-<meta name="pathname" content="code-of-conduct.html">
-<meta name="description" content="lernjs - CODE OF CONDUCT">
-<meta property="og:title" content="CODE OF CONDUCT">
-<meta property="og:description" content="lernjs - CODE OF CONDUCT">
-<meta property="og:type" content="website">
-<meta property="og:url" content="code-of-conduct.html">
-<meta property="og:image" content="undefined">
-<meta name="author" content="neuxdotdev"><meta charset="UTF-8"><meta property="og:site_name" content="lernjs"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/supported-plugins.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager is-hidden-frameless styled-scrollbars show-inline-title show-ribbon hide-folder-note folder-note-underline fn-ignore-attachment-folder mk-readable-line mk-folder-lines mk-inline-context-enabled mk-flow-minimal outliner-plugin-dnd code-styler code-styler-style-inline code-styler-gutter-highlight center-latex-figures invert-latex-figures is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="site-lib/html/file-tree-content.html"></div></div><script defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="CODE_OF_CONDUCT_0">CODE OF CONDUCT</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h1"><h1 data-heading="Contributor Covenant 3.0 Code of Conduct" dir="auto" class="heading" id="Contributor_Covenant_3.0_Code_of_Conduct_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Contributor Covenant 3.0 Code of Conduct</h1></div><div class="el-h2"><h2 data-heading="Our Pledge" dir="auto" class="heading" id="Our_Pledge_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Our Pledge</h2></div><div class="el-p"><p dir="auto">We pledge to make our community welcoming, safe, and equitable for all.</p></div><div class="el-p"><p dir="auto">We are committed to fostering an environment that respects and promotes the dignity, rights, and contributions of all individuals, regardless of characteristics including race, ethnicity, caste, color, age, physical characteristics, neurodiversity, disability, sex or gender, gender identity or expression, sexual orientation, language, philosophy or religion, national or social origin, socio-economic position, level of education, or other status. The same privileges of participation are extended to everyone who participates in good faith and in accordance with this Covenant.</p></div><div class="el-h2"><h2 data-heading="Encouraged Behaviors" dir="auto" class="heading" id="Encouraged_Behaviors_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Encouraged Behaviors</h2></div><div class="el-p"><p dir="auto">While acknowledging differences in social norms, we all strive to meet our community's expectations for positive behavior. We also understand that our words and actions may be interpreted differently than we intend based on culture, background, or native language.</p></div><div class="el-p"><p dir="auto">With these considerations in mind, we agree to behave mindfully toward each other and act in ways that center our shared values, including:</p></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto">Respecting the <strong>purpose of our community</strong>, our activities, and our ways of gathering.</li>
-<li data-line="1" dir="auto">Engaging <strong>kindly and honestly</strong> with others.</li>
-<li data-line="2" dir="auto">Respecting <strong>different viewpoints</strong> and experiences.</li>
-<li data-line="3" dir="auto"><strong>Taking responsibility</strong> for our actions and contributions.</li>
-<li data-line="4" dir="auto">Gracefully giving and accepting <strong>constructive feedback</strong>.</li>
-<li data-line="5" dir="auto">Committing to <strong>repairing harm</strong> when it occurs.</li>
-<li data-line="6" dir="auto">Behaving in other ways that promote and sustain the <strong>well-being of our community</strong>.</li>
-</ol></div><div class="el-h2"><h2 data-heading="Restricted Behaviors" dir="auto" class="heading" id="Restricted_Behaviors_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Restricted Behaviors</h2></div><div class="el-p"><p dir="auto">We agree to restrict the following behaviors in our community. Instances, threats, and promotion of these behaviors are violations of this Code of Conduct.</p></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto"><strong>Harassment.</strong> Violating explicitly expressed boundaries or engaging in unnecessary personal attention after any clear request to stop.</li>
-<li data-line="1" dir="auto"><strong>Character attacks.</strong> Making insulting, demeaning, or pejorative comments directed at a community member or group of people.</li>
-<li data-line="2" dir="auto"><strong>Stereotyping or discrimination.</strong> Characterizing anyone’s personality or behavior on the basis of immutable identities or traits.</li>
-<li data-line="3" dir="auto"><strong>Sexualization.</strong> Behaving in a way that would generally be considered inappropriately intimate in the context or purpose of the community.</li>
-<li data-line="4" dir="auto"><strong>Violating confidentiality</strong>. Sharing or acting on someone's personal or private information without their permission.</li>
-<li data-line="5" dir="auto"><strong>Endangerment.</strong> Causing, encouraging, or threatening violence or other harm toward any person or group.</li>
-<li data-line="6" dir="auto">Behaving in other ways that <strong>threaten the well-being</strong> of our community.</li>
-</ol></div><div class="el-h3"><h3 data-heading="Other Restrictions" dir="auto" class="heading" id="Other_Restrictions_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Other Restrictions</h3></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto"><strong>Misleading identity.</strong> Impersonating someone else for any reason, or pretending to be someone else to evade enforcement actions.</li>
-<li data-line="1" dir="auto"><strong>Failing to credit sources.</strong> Not properly crediting the sources of content you contribute.</li>
-<li data-line="2" dir="auto"><strong>Promotional materials</strong>. Sharing marketing or other commercial content in a way that is outside the norms of the community.</li>
-<li data-line="3" dir="auto"><strong>Irresponsible communication.</strong> Failing to responsibly present content which includes, links or describes any other restricted behaviors.</li>
-</ol></div><div class="el-h2"><h2 data-heading="Reporting an Issue" dir="auto" class="heading" id="Reporting_an_Issue_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Reporting an Issue</h2></div><div class="el-p"><p dir="auto">Tensions can occur between community members even when they are trying their best to collaborate. Not every conflict represents a code of conduct violation, and this Code of Conduct reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.</p></div><div class="el-p"><p dir="auto">When an incident does occur, it is important to report it promptly. To report a possible violation, **## Reporting Issues</p></div><div class="el-p"><p dir="auto">This repository is for learning purposes.<br>
-If you find mistakes or security concerns, please open an issue with clear details so it can be reviewed and fixed.<br>
-**</p></div><div class="el-p"><p dir="auto">Community Moderators take reports of violations seriously and will make every effort to respond in a timely manner. They will investigate all reports of code of conduct violations, reviewing messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators will keep investigation and enforcement actions as transparent as possible while prioritizing safety and confidentiality. In order to honor these values, enforcement actions are carried out in private with the involved parties, but communicating to the whole community may be part of a mutually agreed upon resolution.</p></div><div class="el-h2"><h2 data-heading="Addressing and Repairing Harm" dir="auto" class="heading" id="Addressing_and_Repairing_Harm_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Addressing and Repairing Harm</h2></div><div class="el-h2"><h2 data-heading="Enforcement Guidelines" dir="auto" class="heading" id="Enforcement_Guidelines_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Enforcement Guidelines</h2></div><div class="el-p"><p dir="auto">Project maintainers will follow these guidelines when determining the consequences for any behavior they deem in violation of this Code of Conduct:</p></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto"><strong>Correction</strong> — A private discussion to clarify expectations.  </li>
-<li data-line="1" dir="auto"><strong>Warning</strong> — A clear warning that continued behavior may result in temporary restriction.  </li>
-<li data-line="2" dir="auto"><strong>Temporary Ban</strong> — Removal from project activities for a defined period.  </li>
-<li data-line="3" dir="auto"><strong>Permanent Ban</strong> — Indefinite removal from participation in the project or community.</li>
-</ol></div><div class="el-p"><p dir="auto">All reports will be handled confidentially.<br>
-To report issues, contact the maintainers at <a data-tooltip-position="top" aria-label="mailto:neuxdev1@gmail.com" rel="noopener nofollow" class="external-link is-unresolved" href="mailto:neuxdev1@gmail.com" target="_self">neuxdev1@gmail.com</a>**</p></div><div class="el-p"><p dir="auto">If an investigation by the Community Moderators finds that this Code of Conduct has been violated, the following enforcement ladder may be used to determine how best to repair harm, based on the incident's impact on the individuals involved and the community as a whole. Depending on the severity of a violation, lower rungs on the ladder may be skipped.</p></div><div class="el-ol"><ol>
-<li data-line="0" dir="auto">Warning<br>
-2) Event: A violation involving a single incident or series of incidents.<br>
-3) Consequence: A private, written warning from the Community Moderators.<br>
-4) Repair: Examples of repair include a private written apology, acknowledgement of responsibility, and seeking clarification on expectations.</li>
-<li data-line="4" dir="auto">Temporarily Limited Activities<br>
-6) Event: A repeated incidence of a violation that previously resulted in a warning, or the first incidence of a more serious violation.<br>
-7) Consequence: A private, written warning with a time-limited cooldown period designed to underscore the seriousness of the situation and give the community members involved time to process the incident. The cooldown period may be limited to particular communication channels or interactions with particular community members.<br>
-8) Repair: Examples of repair may include making an apology, using the cooldown period to reflect on actions and impact, and being thoughtful about re-entering community spaces after the period is over.</li>
-<li data-line="8" dir="auto">Temporary Suspension<br>
-10) Event: A pattern of repeated violation which the Community Moderators have tried to address with warnings, or a single serious violation.<br>
-11) Consequence: A private written warning with conditions for return from suspension. In general, temporary suspensions give the person being suspended time to reflect upon their behavior and possible corrective actions.<br>
-12) Repair: Examples of repair include respecting the spirit of the suspension, meeting the specified conditions for return, and being thoughtful about how to reintegrate with the community when the suspension is lifted.</li>
-<li data-line="12" dir="auto">Permanent Ban</li>
-<li data-line="13" dir="auto">Event: A pattern of repeated code of conduct violations that other steps on the ladder have failed to resolve, or a violation so serious that the Community Moderators determine there is no way to keep the community safe with this person as a member.</li>
-<li data-line="14" dir="auto">Consequence: Access to all community spaces, tools, and communication channels is removed. In general, permanent bans should be rarely used, should have strong reasoning behind them, and should only be resorted to if working through other remedies has failed to change the behavior.</li>
-<li data-line="15" dir="auto">Repair: There is no possible repair in cases of this severity.</li>
-</ol></div><div class="el-p"><p dir="auto">This enforcement ladder is intended as a guideline. It does not limit the ability of Community Managers to use their discretion and judgment, in keeping with the best interests of our community.</p></div><div class="el-h2"><h2 data-heading="Scope" dir="auto" class="heading" id="Scope_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Scope</h2></div><div class="el-p"><p dir="auto">This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public or other spaces. Examples of representing our community include using an official email address, posting via an official social media account, or acting as an appointed representative at an online or offline event.</p></div><div class="el-h2"><h2 data-heading="Attribution" dir="auto" class="heading" id="Attribution_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Attribution</h2></div><div class="el-p"><p dir="auto">This Code of Conduct is adapted from the Contributor Covenant, version 3.0, permanently available at <a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.contributor-covenant.org/version/3/0/" target="_self">https://www.contributor-covenant.org/version/3/0/</a>.</p></div><div class="el-p"><p dir="auto">Contributor Covenant is stewarded by the Organization for Ethical Source and licensed under CC BY-SA 4.0. To view a copy of this license, visit <a rel="noopener nofollow" class="external-link is-unresolved" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_self">https://creativecommons.org/licenses/by-sa/4.0/</a></p></div><div class="el-p"><p dir="auto">For answers to common questions about Contributor Covenant, see the FAQ at <a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.contributor-covenant.org/faq" target="_self">https://www.contributor-covenant.org/faq</a>. Translations are provided at <a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.contributor-covenant.org/translations" target="_self">https://www.contributor-covenant.org/translations</a>. Additional enforcement and community guideline resources can be found at <a rel="noopener nofollow" class="external-link is-unresolved" href="https://www.contributor-covenant.org/resources" target="_self">https://www.contributor-covenant.org/resources</a>. The enforcement ladder was inspired by the work of <a data-tooltip-position="top" aria-label="https://github.com/mozilla/inclusion" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/mozilla/inclusion" target="_self">Mozilla’s code of conduct team</a>.</p></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
-		<div class="graph-view-container">
-			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
-			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
-			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<title>CODE OF CONDUCT</title>
+	<base href="/test-repo/">
+	<meta name="pathname" content="code-of-conduct.html">
+	<meta name="description" content="lernjs - CODE OF CONDUCT">
+	<meta property="og:title" content="CODE OF CONDUCT">
+	<meta property="og:description" content="lernjs - CODE OF CONDUCT">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="code-of-conduct.html">
+	<meta property="og:image" content="undefined">
+	<meta name="author" content="neuxdotdev">
+	<meta charset="UTF-8">
+	<meta property="og:site_name" content="lernjs">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+	<script async="" id="webpage-script" src="site-lib/scripts/webpage.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js"
+		onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script>
+	<link rel="icon" href="site-lib/media/favicon.png">
+	<link rel="stylesheet" href="site-lib/styles/obsidian.css">
+	<link rel="preload" href="site-lib/styles/other-plugins.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'"><noscript>
+		<link rel="stylesheet" href="site-lib/styles/other-plugins.css">
+	</noscript>
+	<link rel="stylesheet" href="site-lib/styles/theme.css">
+	<link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'"><noscript>
+		<link rel="stylesheet" href="site-lib/styles/global-variable-styles.css">
+	</noscript>
+	<link rel="preload" href="site-lib/styles/supported-plugins.css" as="style"
+		onload="this.onload=null;this.rel='stylesheet'"><noscript>
+		<link rel="stylesheet" href="site-lib/styles/supported-plugins.css">
+	</noscript>
+	<link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="site-lib/styles/main-styles.css">
+	</noscript>
+	<style>
+		body {
+			--line-width: 40em;
+			--line-width-adaptive: 40em;
+			--file-line-width: 40em;
+			--sidebar-width: min(20em, 80vw);
+			--collapse-arrow-size: 11px;
+			--tree-vertical-spacing: 1.3em;
+			--sidebar-margin: 12px
+		}
+
+		:root {
+			background-color: #202124
+		}
+
+		.sidebar {
+			height: 100%;
+			font-size: 14px;
+			z-index: 10;
+			min-width: calc(var(--sidebar-width) + var(--divider-width-hover));
+			max-width: calc(var(--sidebar-width) + var(--divider-width-hover));
+			position: relative;
+			overflow: hidden;
+			overflow: clip;
+			transition: min-width ease-in-out, max-width ease-in-out;
+			transition-duration: .2s;
+			contain: size
+		}
+
+		#left-sidebar {
+			left: 0
+		}
+
+		#right-sidebar {
+			right: 0
+		}
+
+		.sidebar.is-collapsed {
+			min-width: 0;
+			max-width: 0
+		}
+
+		.sidebar.floating {
+			position: absolute
+		}
+
+		.sidebar .leaf-content {
+			height: 100%;
+			min-width: calc(var(--sidebar-width) - var(--divider-width-hover));
+			top: 0;
+			padding: var(--sidebar-margin);
+			padding-top: 4em;
+			line-height: var(--line-height-tight);
+			background-color: var(--background-secondary);
+			transition: background-color, border-right, border-left, box-shadow;
+			transition-duration: var(--color-fade-speed);
+			transition-timing-function: ease-in-out;
+			position: absolute;
+			display: flex;
+			flex-direction: column
+		}
+
+		.sidebar:not(.is-collapsed) .leaf-content {
+			min-width: calc(max(100%, var(--sidebar-width)) - 3px);
+			max-width: calc(max(100%, var(--sidebar-width)) - 3px)
+		}
+
+		#left-sidebar-content {
+			left: 0;
+			border-top-right-radius: var(--radius-l);
+			border-bottom-right-radius: var(--radius-l)
+		}
+
+		#right-sidebar-content {
+			right: 0;
+			border-top-left-radius: var(--radius-l);
+			border-bottom-left-radius: var(--radius-l)
+		}
+
+		.sidebar #left-sidebar-content,
+		.sidebar #right-sidebar-content {
+			contain: none !important;
+			container-type: normal !important;
+			animation: none !important
+		}
+
+		.sidebar:has(.leaf-content:empty):has(.topbar-content:empty) {
+			display: none
+		}
+
+		.sidebar-topbar {
+			height: calc(2.3em + 2 * var(--sidebar-margin));
+			width: var(--sidebar-width);
+			padding: var(--sidebar-margin);
+			z-index: 1;
+			position: fixed;
+			display: flex;
+			align-items: center;
+			transition: width ease-in-out;
+			transition-duration: inherit
+		}
+
+		.sidebar.is-collapsed .sidebar-topbar {
+			width: calc(2.3em + var(--sidebar-margin) * 2)
+		}
+
+		.sidebar .sidebar-topbar.is-collapsed {
+			width: 0
+		}
+
+		#left-sidebar .sidebar-topbar {
+			left: 0;
+			flex-direction: row;
+			border-top-right-radius: var(--radius-l)
+		}
+
+		#right-sidebar .sidebar-topbar {
+			right: 0;
+			flex-direction: row-reverse;
+			border-top-left-radius: var(--radius-l)
+		}
+
+		#left-sidebar .topbar-content {
+			margin-right: calc(2.3em + var(--sidebar-margin));
+			flex-direction: row
+		}
+
+		#right-sidebar .topbar-content {
+			margin-left: calc(2.3em + var(--sidebar-margin));
+			flex-direction: row-reverse
+		}
+
+		.topbar-content {
+			overflow: hidden visible;
+			overflow: clip visible;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			transition: inherit
+		}
+
+		.sidebar.is-collapsed .topbar-content {
+			width: 0;
+			transition: inherit
+		}
+
+		.clickable-icon.sidebar-collapse-icon {
+			background-color: transparent;
+			color: var(--icon-color-focused);
+			padding: 2px !important;
+			margin: 0 !important;
+			height: 100% !important;
+			width: 2.3em !important;
+			margin-inline: 0.14em !important;
+			position: absolute
+		}
+
+		#left-sidebar .clickable-icon.sidebar-collapse-icon {
+			transform: rotateY(180deg);
+			right: var(--sidebar-margin)
+		}
+
+		#right-sidebar .clickable-icon.sidebar-collapse-icon {
+			transform: rotateY(180deg);
+			left: var(--sidebar-margin)
+		}
+
+		.clickable-icon.sidebar-collapse-icon svg.svg-icon {
+			width: 100%;
+			height: 100%
+		}
+
+		.feature-title {
+			margin-left: 1px;
+			text-transform: uppercase;
+			letter-spacing: .06em;
+			margin-top: .75em;
+			margin-bottom: .75em
+		}
+
+		.feature-header {
+			display: flex;
+			align-items: center;
+			padding-top: 0;
+			font-size: 1em;
+			padding-left: 0
+		}
+
+		body.floating-sidebars .sidebar {
+			position: absolute
+		}
+
+		body {
+			transition: background-color var(--color-fade-speed) ease-in-out
+		}
+
+		#navbar:not(:empty) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: .5em 1em;
+			width: 100%
+		}
+
+		#main {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+			align-items: stretch;
+			justify-content: center
+		}
+
+		#main-horizontal {
+			display: flex;
+			flex-direction: row;
+			flex-grow: 1;
+			width: 100%;
+			align-items: stretch;
+			justify-content: center
+		}
+
+		#center-content {
+			flex-basis: 100%;
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: opacity .2s ease-in-out;
+			contain: inline-size
+		}
+
+		.hide {
+			opacity: 0 !important;
+			transition: opacity .2s ease-in-out;
+			pointer-events: none
+		}
+
+		#center-content>.obsidian-document {
+			padding-left: 2em;
+			padding-right: 1em;
+			margin-bottom: 0;
+			width: 100%;
+			width: -webkit-fill-available;
+			width: -moz-available;
+			width: fill-available;
+			transition: background-color var(--color-fade-speed) ease-in-out;
+			border-top-right-radius: var(--window-radius, var(--radius-m));
+			border-top-left-radius: var(--window-radius, var(--radius-m));
+			overflow-x: hidden !important;
+			overflow-y: auto !important;
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+			contain: inline-size
+		}
+
+		body #center-content>.obsidian-document>.markdown-preview-sizer {
+			padding-bottom: 80vh;
+			width: 100%;
+			max-width: var(--line-width);
+			flex-basis: var(--line-width);
+			transition: background-color var(--color-fade-speed) ease-in-out;
+			contain: inline-size
+		}
+
+		#center-content>.obsidian-document>div {
+			width: 100% !important;
+			transition: background-color var(--color-fade-speed) ease-in-out;
+			contain: inline-size
+		}
+
+		#center-content>.obsidian-document:not([data-type=markdown]).embed {
+			display: flex;
+			padding: 1em;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+			justify-content: center
+		}
+
+		#center-content>.obsidian-document:not([data-type=markdown]).embed>* {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain
+		}
+
+		:not(h1, h2, h3, h4, h5, h6, li):has(> :is(.math, table)) {
+			overflow-x: auto !important
+		}
+
+		#center-content>.obsidian-document:not([data-type=markdown]) {
+			overflow-x: auto;
+			contain: content;
+			padding: 0;
+			margin: 0;
+			height: 100%
+		}
+
+		.obsidian-document[data-type=attachment] {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%
+		}
+
+		.obsidian-document[data-type=attachment]>* {
+			outline: 0;
+			border: none;
+			box-shadow: none
+		}
+
+		.obsidian-document[data-type=attachment] :is(img) {
+			max-width: 90%;
+			max-height: 90%;
+			object-fit: contain
+		}
+
+		.obsidian-document[data-type=attachment]>:is(audio) {
+			width: 100%;
+			max-width: min(90%, var(--line-width))
+		}
+
+		.obsidian-document[data-type=attachment]>:is(embed, iframe, video) {
+			width: 100%;
+			height: 100%;
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain
+		}
+
+		.canvas-wrapper>:is(.header, .footer) {
+			z-index: 100;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			align-items: center
+		}
+
+		.scroll-highlight {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			z-index: 1000;
+			background-color: hsla(var(--color-accent-hsl), .25);
+			opacity: 0;
+			padding: 1em;
+			inset: 50%;
+			translate: -50% -50%;
+			border-radius: var(--radius-s)
+		}
+	</style>
+	<script
+		defer="">async function loadIncludes() { let e = document.querySelectorAll("link[itemprop='include']"); for (const t of e) { let e = t.getAttribute("href"); try { let o = ""; if (e.startsWith("https:") || e.startsWith("http:") || "file:" != window.location.protocol) { const n = await fetch(e); if (!n.ok) { console.log("Could not include file: " + e), t?.remove(); continue } o = await n.text() } else { const t = document.getElementById(btoa(encodeURI(e))); if (t) { const e = JSON.parse(decodeURI(atob(t.getAttribute("value") ?? ""))); o = e?.data ?? "" } } let n = document.createRange().createContextualFragment(o); t.before(n), t.remove(), console.log("Included text: " + o), console.log("Included file: " + e) } catch (o) { t?.remove(), console.log("Could not include file: " + e, o); continue } } } document.addEventListener("DOMContentLoaded", (() => { loadIncludes() })); let isFileProtocol = "file:" == location.protocol; function waitLoadScripts(e, t) { let o = e.map((e => document.getElementById(e + "-script"))); !function e(n) { let l = o[n], c = n + 1; l ? (l && "true" != l.getAttribute("loaded") || n < o.length && e(c), n < o.length && l.addEventListener("load", (() => e(c)))) : n < o.length ? e(c) : t() }(0) }</script>
+</head>
+
+<body
+	class="publish css-settings-manager is-hidden-frameless styled-scrollbars show-inline-title show-ribbon hide-folder-note folder-note-underline fn-ignore-attachment-folder mk-readable-line mk-folder-lines mk-inline-context-enabled mk-flow-minimal outliner-plugin-dnd code-styler code-styler-style-inline code-styler-gutter-highlight center-latex-figures invert-latex-figures is-focused">
+	<script
+		defer="">let theme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); "dark" == theme ? (document.body.classList.add("theme-dark"), document.body.classList.remove("theme-light")) : (document.body.classList.add("theme-light"), document.body.classList.remove("theme-dark")), window.innerWidth < 480 ? document.body.classList.add("is-phone") : window.innerWidth < 768 ? document.body.classList.add("is-tablet") : window.innerWidth < 1024 ? document.body.classList.add("is-small-screen") : document.body.classList.add("is-large-screen")</script>
+	<div id="main">
+		<div id="navbar"></div>
+		<div id="main-horizontal">
+			<div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);">
+				<div id="left-sidebar" class="sidebar">
+					<div class="sidebar-handle"></div>
+					<div class="sidebar-topbar">
+						<div class="topbar-content"></div>
+						<div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+								height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+								stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+								<path
+									d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
+								</path>
+								<path d="M10 4V20"></path>
+								<path d="M4 7H7"></path>
+								<path d="M4 10H7"></path>
+								<path d="M4 13H7"></path>
+							</svg></div>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<div id="left-sidebar-content" class="leaf-content">
+							<link itemprop="include" href="site-lib/html/file-tree-content.html">
+						</div>
+					</div>
+					<script
+						defer="">let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script>
+				</div>
+			</div>
+			<div id="center-content" class="leaf">
+				<div
+					class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties"
+					data-type="markdown">
+					<style id="MJX-CHTML-styles"></style>
+					<div class="markdown-preview-sizer markdown-preview-section">
+						<div class="header">
+							<h1 class="page-title heading inline-title" id="CODE_OF_CONDUCT_0">CODE OF CONDUCT</h1>
+							<div class="data-bar"></div>
+						</div>
+						<div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+						<div class="el-h1">
+							<h1 data-heading="Contributor Covenant 3.0 Code of Conduct" dir="auto" class="heading"
+								id="Contributor_Covenant_3.0_Code_of_Conduct_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Contributor Covenant 3.0 Code of Conduct</h1>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Our Pledge" dir="auto" class="heading" id="Our_Pledge_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Our Pledge</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">We pledge to make our community welcoming, safe, and equitable for all.</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">We are committed to fostering an environment that respects and promotes the dignity, rights,
+								and contributions of all individuals, regardless of characteristics including race, ethnicity, caste,
+								color, age, physical characteristics, neurodiversity, disability, sex or gender, gender identity or
+								expression, sexual orientation, language, philosophy or religion, national or social origin,
+								socio-economic position, level of education, or other status. The same privileges of participation are
+								extended to everyone who participates in good faith and in accordance with this Covenant.</p>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Encouraged Behaviors" dir="auto" class="heading" id="Encouraged_Behaviors_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Encouraged Behaviors</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">While acknowledging differences in social norms, we all strive to meet our community's
+								expectations for positive behavior. We also understand that our words and actions may be interpreted
+								differently than we intend based on culture, background, or native language.</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">With these considerations in mind, we agree to behave mindfully toward each other and act in
+								ways that center our shared values, including:</p>
+						</div>
+						<div class="el-ol">
+							<ol>
+								<li data-line="0" dir="auto">Respecting the <strong>purpose of our community</strong>, our activities,
+									and our ways of gathering.</li>
+								<li data-line="1" dir="auto">Engaging <strong>kindly and honestly</strong> with others.</li>
+								<li data-line="2" dir="auto">Respecting <strong>different viewpoints</strong> and experiences.</li>
+								<li data-line="3" dir="auto"><strong>Taking responsibility</strong> for our actions and contributions.
+								</li>
+								<li data-line="4" dir="auto">Gracefully giving and accepting <strong>constructive feedback</strong>.
+								</li>
+								<li data-line="5" dir="auto">Committing to <strong>repairing harm</strong> when it occurs.</li>
+								<li data-line="6" dir="auto">Behaving in other ways that promote and sustain the <strong>well-being of
+										our community</strong>.</li>
+							</ol>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Restricted Behaviors" dir="auto" class="heading" id="Restricted_Behaviors_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Restricted Behaviors</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">We agree to restrict the following behaviors in our community. Instances, threats, and
+								promotion of these behaviors are violations of this Code of Conduct.</p>
+						</div>
+						<div class="el-ol">
+							<ol>
+								<li data-line="0" dir="auto"><strong>Harassment.</strong> Violating explicitly expressed boundaries or
+									engaging in unnecessary personal attention after any clear request to stop.</li>
+								<li data-line="1" dir="auto"><strong>Character attacks.</strong> Making insulting, demeaning, or
+									pejorative comments directed at a community member or group of people.</li>
+								<li data-line="2" dir="auto"><strong>Stereotyping or discrimination.</strong> Characterizing anyone’s
+									personality or behavior on the basis of immutable identities or traits.</li>
+								<li data-line="3" dir="auto"><strong>Sexualization.</strong> Behaving in a way that would generally be
+									considered inappropriately intimate in the context or purpose of the community.</li>
+								<li data-line="4" dir="auto"><strong>Violating confidentiality</strong>. Sharing or acting on someone's
+									personal or private information without their permission.</li>
+								<li data-line="5" dir="auto"><strong>Endangerment.</strong> Causing, encouraging, or threatening
+									violence or other harm toward any person or group.</li>
+								<li data-line="6" dir="auto">Behaving in other ways that <strong>threaten the well-being</strong> of our
+									community.</li>
+							</ol>
+						</div>
+						<div class="el-h3">
+							<h3 data-heading="Other Restrictions" dir="auto" class="heading" id="Other_Restrictions_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Other Restrictions</h3>
+						</div>
+						<div class="el-ol">
+							<ol>
+								<li data-line="0" dir="auto"><strong>Misleading identity.</strong> Impersonating someone else for any
+									reason, or pretending to be someone else to evade enforcement actions.</li>
+								<li data-line="1" dir="auto"><strong>Failing to credit sources.</strong> Not properly crediting the
+									sources of content you contribute.</li>
+								<li data-line="2" dir="auto"><strong>Promotional materials</strong>. Sharing marketing or other
+									commercial content in a way that is outside the norms of the community.</li>
+								<li data-line="3" dir="auto"><strong>Irresponsible communication.</strong> Failing to responsibly
+									present content which includes, links or describes any other restricted behaviors.</li>
+							</ol>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Reporting an Issue" dir="auto" class="heading" id="Reporting_an_Issue_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Reporting an Issue</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">Tensions can occur between community members even when they are trying their best to
+								collaborate. Not every conflict represents a code of conduct violation, and this Code of Conduct
+								reinforces encouraged behaviors and norms that can help avoid conflicts and minimize harm.</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">When an incident does occur, it is important to report it promptly. To report a possible
+								violation, **## Reporting Issues</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">This repository is for learning purposes.<br>
+								If you find mistakes or security concerns, please open an issue with clear details so it can be reviewed
+								and fixed.<br>
+								**</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">Community Moderators take reports of violations seriously and will make every effort to
+								respond in a timely manner. They will investigate all reports of code of conduct violations, reviewing
+								messages, logs, and recordings, or interviewing witnesses and other participants. Community Moderators
+								will keep investigation and enforcement actions as transparent as possible while prioritizing safety and
+								confidentiality. In order to honor these values, enforcement actions are carried out in private with the
+								involved parties, but communicating to the whole community may be part of a mutually agreed upon
+								resolution.</p>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Addressing and Repairing Harm" dir="auto" class="heading"
+								id="Addressing_and_Repairing_Harm_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Addressing and Repairing Harm</h2>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Enforcement Guidelines" dir="auto" class="heading" id="Enforcement_Guidelines_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Enforcement Guidelines</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">Project maintainers will follow these guidelines when determining the consequences for any
+								behavior they deem in violation of this Code of Conduct:</p>
+						</div>
+						<div class="el-ol">
+							<ol>
+								<li data-line="0" dir="auto"><strong>Correction</strong> — A private discussion to clarify expectations.
+								</li>
+								<li data-line="1" dir="auto"><strong>Warning</strong> — A clear warning that continued behavior may
+									result in temporary restriction. </li>
+								<li data-line="2" dir="auto"><strong>Temporary Ban</strong> — Removal from project activities for a
+									defined period. </li>
+								<li data-line="3" dir="auto"><strong>Permanent Ban</strong> — Indefinite removal from participation in
+									the project or community.</li>
+							</ol>
+						</div>
+						<div class="el-p">
+							<p dir="auto">All reports will be handled confidentially.<br>
+								To report issues, contact the maintainers at <a data-tooltip-position="top"
+									aria-label="mailto:neuxdev1@gmail.com" rel="noopener nofollow" class="external-link is-unresolved"
+									href="mailto:neuxdev1@gmail.com" target="_self">neuxdev1@gmail.com</a>**</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">If an investigation by the Community Moderators finds that this Code of Conduct has been
+								violated, the following enforcement ladder may be used to determine how best to repair harm, based on
+								the incident's impact on the individuals involved and the community as a whole. Depending on the
+								severity of a violation, lower rungs on the ladder may be skipped.</p>
+						</div>
+						<div class="el-ol">
+							<ol>
+								<li data-line="0" dir="auto">Warning<br>
+									2) Event: A violation involving a single incident or series of incidents.<br>
+									3) Consequence: A private, written warning from the Community Moderators.<br>
+									4) Repair: Examples of repair include a private written apology, acknowledgement of responsibility,
+									and seeking clarification on expectations.</li>
+								<li data-line="4" dir="auto">Temporarily Limited Activities<br>
+									6) Event: A repeated incidence of a violation that previously resulted in a warning, or the first
+									incidence of a more serious violation.<br>
+									7) Consequence: A private, written warning with a time-limited cooldown period designed to underscore
+									the seriousness of the situation and give the community members involved time to process the incident.
+									The cooldown period may be limited to particular communication channels or interactions with
+									particular community members.<br>
+									8) Repair: Examples of repair may include making an apology, using the cooldown period to reflect on
+									actions and impact, and being thoughtful about re-entering community spaces after the period is over.
+								</li>
+								<li data-line="8" dir="auto">Temporary Suspension<br>
+									10) Event: A pattern of repeated violation which the Community Moderators have tried to address with
+									warnings, or a single serious violation.<br>
+									11) Consequence: A private written warning with conditions for return from suspension. In general,
+									temporary suspensions give the person being suspended time to reflect upon their behavior and possible
+									corrective actions.<br>
+									12) Repair: Examples of repair include respecting the spirit of the suspension, meeting the specified
+									conditions for return, and being thoughtful about how to reintegrate with the community when the
+									suspension is lifted.</li>
+								<li data-line="12" dir="auto">Permanent Ban</li>
+								<li data-line="13" dir="auto">Event: A pattern of repeated code of conduct violations that other steps
+									on the ladder have failed to resolve, or a violation so serious that the Community Moderators
+									determine there is no way to keep the community safe with this person as a member.</li>
+								<li data-line="14" dir="auto">Consequence: Access to all community spaces, tools, and communication
+									channels is removed. In general, permanent bans should be rarely used, should have strong reasoning
+									behind them, and should only be resorted to if working through other remedies has failed to change the
+									behavior.</li>
+								<li data-line="15" dir="auto">Repair: There is no possible repair in cases of this severity.</li>
+							</ol>
+						</div>
+						<div class="el-p">
+							<p dir="auto">This enforcement ladder is intended as a guideline. It does not limit the ability of
+								Community Managers to use their discretion and judgment, in keeping with the best interests of our
+								community.</p>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Scope" dir="auto" class="heading" id="Scope_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Scope</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">This Code of Conduct applies within all community spaces, and also applies when an
+								individual is officially representing the community in public or other spaces. Examples of representing
+								our community include using an official email address, posting via an official social media account, or
+								acting as an appointed representative at an online or offline event.</p>
+						</div>
+						<div class="el-h2">
+							<h2 data-heading="Attribution" dir="auto" class="heading" id="Attribution_0"><span
+									class="heading-collapse-indicator collapse-indicator collapse-icon"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+										stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="svg-icon right-triangle">
+										<path d="M3 8L12 17L21 8"></path>
+									</svg></span>Attribution</h2>
+						</div>
+						<div class="el-p">
+							<p dir="auto">This Code of Conduct is adapted from the Contributor Covenant, version 3.0, permanently
+								available at <a rel="noopener nofollow" class="external-link is-unresolved"
+									href="https://www.contributor-covenant.org/version/3/0/"
+									target="_self">https://www.contributor-covenant.org/version/3/0/</a>.</p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">Contributor Covenant is stewarded by the Organization for Ethical Source and licensed under
+								CC BY-SA 4.0. To view a copy of this license, visit <a rel="noopener nofollow"
+									class="external-link is-unresolved" href="https://creativecommons.org/licenses/by-sa/4.0/"
+									target="_self">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
+						</div>
+						<div class="el-p">
+							<p dir="auto">For answers to common questions about Contributor Covenant, see the FAQ at <a
+									rel="noopener nofollow" class="external-link is-unresolved"
+									href="https://www.contributor-covenant.org/faq"
+									target="_self">https://www.contributor-covenant.org/faq</a>. Translations are provided at <a
+									rel="noopener nofollow" class="external-link is-unresolved"
+									href="https://www.contributor-covenant.org/translations"
+									target="_self">https://www.contributor-covenant.org/translations</a>. Additional enforcement and
+								community guideline resources can be found at <a rel="noopener nofollow"
+									class="external-link is-unresolved" href="https://www.contributor-covenant.org/resources"
+									target="_self">https://www.contributor-covenant.org/resources</a>. The enforcement ladder was inspired
+								by the work of <a data-tooltip-position="top" aria-label="https://github.com/mozilla/inclusion"
+									rel="noopener nofollow" class="external-link is-unresolved"
+									href="https://github.com/mozilla/inclusion" target="_self">Mozilla’s code of conduct team</a>.</p>
+						</div>
+						<div class="footer">
+							<div class="data-bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);">
+				<div id="right-sidebar" class="sidebar">
+					<div class="sidebar-handle"></div>
+					<div class="sidebar-topbar">
+						<div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input
+									class="theme-toggle-input" type="checkbox" id="theme-toggle-input">
+								<div class="toggle-background"></div>
+							</label></div>
+						<div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+								height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+								stroke-linecap="round" stroke-linejoin="round" class="svg-icon">
+								<path
+									d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z">
+								</path>
+								<path d="M10 4V20"></path>
+								<path d="M4 7H7"></path>
+								<path d="M4 10H7"></path>
+								<path d="M4 13H7"></path>
+							</svg></div>
+					</div>
+					<div class="sidebar-content-wrapper">
+						<div id="right-sidebar-content" class="leaf-content">
+							<div class="graph-view-wrapper">
+								<div class="feature-header">
+									<div class="feature-title">Interactive Graph</div>
+								</div>
+								<div class="graph-view-placeholder">
+									<div class="graph-view-container">
+										<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+												stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="svg-icon">
+												<line x1="7" y1="17" x2="17" y2="7"></line>
+												<polyline points="7 7 17 7 17 17"></polyline>
+											</svg>
+										</div>
+										<div class="graph-icon graph-global" role="button" aria-label="Global Graph"
+											data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+												stroke-linejoin="round" class="svg-icon lucide-git-fork">
+												<circle cx="12" cy="18" r="3"></circle>
+												<circle cx="6" cy="6" r="3"></circle>
+												<circle cx="18" cy="6" r="3"></circle>
+												<path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path>
+												<path d="M12 12v3"></path>
+											</svg></div>
+										<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+									</div>
+								</div>
+							</div>
+							<div id="outline" class=" tree-container">
+								<div class="feature-header">
+									<div class="feature-title">Table Of Contents</div><button
+										class="clickable-icon nav-action-button tree-collapse-all is-collapsed"
+										aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round"></svg></button>
+								</div>
+								<div class="tree-item is-collapsed" data-depth="1"><a class="tree-item-self is-clickable"
+										href="code-of-conduct.html#CODE_OF_CONDUCT_0" data-path="#CODE_OF_CONDUCT_0">
+										<div class="tree-item-inner heading-link" heading-name="CODE OF CONDUCT">CODE OF CONDUCT</div>
+									</a>
+									<div class="tree-item-children"></div>
+								</div>
+								<div class="tree-item is-collapsed" data-depth="1"><a class="tree-item-self is-clickable"
+										href="code-of-conduct.html#Contributor_Covenant_3.0_Code_of_Conduct_0"
+										data-path="#Contributor_Covenant_3.0_Code_of_Conduct_0">
+										<div class="tree-item-inner heading-link" heading-name="Contributor Covenant 3.0 Code of Conduct">
+											Contributor Covenant 3.0 Code of Conduct</div>
+									</a>
+									<div class="tree-item-children">
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Our_Pledge_0" data-path="#Our_Pledge_0">
+												<div class="tree-item-inner heading-link" heading-name="Our Pledge">Our Pledge</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Encouraged_Behaviors_0" data-path="#Encouraged_Behaviors_0">
+												<div class="tree-item-inner heading-link" heading-name="Encouraged Behaviors">Encouraged
+													Behaviors</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item mod-collapsible is-collapsed" data-depth="2"><a
+												class="tree-item-self is-clickable mod-collapsible"
+												href="code-of-conduct.html#Restricted_Behaviors_0" data-path="#Restricted_Behaviors_0">
+												<div class="tree-item-icon collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg"
+														width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+														stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+														class="svg-icon right-triangle">
+														<path d="M3 8L12 17L21 8"></path>
+													</svg></div>
+												<div class="tree-item-inner heading-link" heading-name="Restricted Behaviors">Restricted
+													Behaviors</div>
+											</a>
+											<div class="tree-item-children" style="display: none;">
+												<div class="tree-item is-collapsed" data-depth="3"><a class="tree-item-self is-clickable"
+														href="code-of-conduct.html#Other_Restrictions_0" data-path="#Other_Restrictions_0">
+														<div class="tree-item-inner heading-link" heading-name="Other Restrictions">Other
+															Restrictions</div>
+													</a>
+													<div class="tree-item-children"></div>
+												</div>
+											</div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Reporting_an_Issue_0" data-path="#Reporting_an_Issue_0">
+												<div class="tree-item-inner heading-link" heading-name="Reporting an Issue">Reporting an Issue
+												</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Addressing_and_Repairing_Harm_0"
+												data-path="#Addressing_and_Repairing_Harm_0">
+												<div class="tree-item-inner heading-link" heading-name="Addressing and Repairing Harm">
+													Addressing and Repairing Harm</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Enforcement_Guidelines_0" data-path="#Enforcement_Guidelines_0">
+												<div class="tree-item-inner heading-link" heading-name="Enforcement Guidelines">Enforcement
+													Guidelines</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Scope_0" data-path="#Scope_0">
+												<div class="tree-item-inner heading-link" heading-name="Scope">Scope</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+										<div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable"
+												href="code-of-conduct.html#Attribution_0" data-path="#Attribution_0">
+												<div class="tree-item-inner heading-link" heading-name="Attribution">Attribution</div>
+											</a>
+											<div class="tree-item-children"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script
+						defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script>
+				</div>
+			</div>
 		</div>
-		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all is-collapsed" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item is-collapsed" data-depth="1"><a class="tree-item-self is-clickable" href="code-of-conduct.html#CODE_OF_CONDUCT_0" data-path="#CODE_OF_CONDUCT_0"><div class="tree-item-inner heading-link" heading-name="CODE OF CONDUCT">CODE OF CONDUCT</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="1"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Contributor_Covenant_3.0_Code_of_Conduct_0" data-path="#Contributor_Covenant_3.0_Code_of_Conduct_0"><div class="tree-item-inner heading-link" heading-name="Contributor Covenant 3.0 Code of Conduct">Contributor Covenant 3.0 Code of Conduct</div></a><div class="tree-item-children"><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Our_Pledge_0" data-path="#Our_Pledge_0"><div class="tree-item-inner heading-link" heading-name="Our Pledge">Our Pledge</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Encouraged_Behaviors_0" data-path="#Encouraged_Behaviors_0"><div class="tree-item-inner heading-link" heading-name="Encouraged Behaviors">Encouraged Behaviors</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible is-collapsed" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="code-of-conduct.html#Restricted_Behaviors_0" data-path="#Restricted_Behaviors_0"><div class="tree-item-icon collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Restricted Behaviors">Restricted Behaviors</div></a><div class="tree-item-children" style="display: none;"><div class="tree-item is-collapsed" data-depth="3"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Other_Restrictions_0" data-path="#Other_Restrictions_0"><div class="tree-item-inner heading-link" heading-name="Other Restrictions">Other Restrictions</div></a><div class="tree-item-children"></div></div></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Reporting_an_Issue_0" data-path="#Reporting_an_Issue_0"><div class="tree-item-inner heading-link" heading-name="Reporting an Issue">Reporting an Issue</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Addressing_and_Repairing_Harm_0" data-path="#Addressing_and_Repairing_Harm_0"><div class="tree-item-inner heading-link" heading-name="Addressing and Repairing Harm">Addressing and Repairing Harm</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Enforcement_Guidelines_0" data-path="#Enforcement_Guidelines_0"><div class="tree-item-inner heading-link" heading-name="Enforcement Guidelines">Enforcement Guidelines</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Scope_0" data-path="#Scope_0"><div class="tree-item-inner heading-link" heading-name="Scope">Scope</div></a><div class="tree-item-children"></div></div><div class="tree-item is-collapsed" data-depth="2"><a class="tree-item-self is-clickable" href="code-of-conduct.html#Attribution_0" data-path="#Attribution_0"><div class="tree-item-inner heading-link" heading-name="Attribution">Attribution</div></a><div class="tree-item-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></div></div></body></html>
+	</div>
+</body>
+
+</html>
